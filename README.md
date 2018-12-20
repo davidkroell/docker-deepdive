@@ -91,7 +91,6 @@ curl -sSL https://github.com/docker/compose/releases/download/1.23.2/docker-comp
   -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 
-# TODO
 # deploy wordpress service
 docker-compose -f wordpress-compose.yml up
 ```
