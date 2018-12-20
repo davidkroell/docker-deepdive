@@ -58,7 +58,6 @@ docker ps
 ```
 
 ### Build Docker Image
-
 Build a Docker Image
 ```bash
 git clone https://github.com/ironarachne/namegen # get code
@@ -146,7 +145,21 @@ docker stack deploy --compose-file wordpress-compose.yml wordpress
 ```
 
 ## Monitoring
-Monitor Docker Containers
+Basic container monitoring
 ```bash
 docker container stats
+```
+
+Deploy prometheus monitoring stack
+```bash
+# deploy dev stack
+git clone https://github.com/stefanprodan/swarmprom.git
+cd swarmprom
+
+ADMIN_USER=admin \
+ADMIN_PASSWORD=admin \
+SLACK_URL=https://hooks.slack.com/services/TOKEN \
+SLACK_CHANNEL=devops-alerts \
+SLACK_USER=alertmanager \
+docker stack deploy -c docker-compose.yml mon
 ```
