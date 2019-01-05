@@ -1,6 +1,17 @@
 # Docker deep-dive
 Presentation about Docker.
-Each snippet can be executed in a free [Play with Docker](https://labs.play-with-docker.com/) instance.
+Every snippet can be executed in a free [Play with Docker](https://labs.play-with-docker.com/) instance.
+
+In this presentation, the following topics are covered:
+- Difference to VMs
+- Image vs. Container
+- Registry
+- Dockerfile
+- docker-compose
+- Storage
+- Networking
+- Swarm
+- Monitoring
 
 ## Images
 ### Exploring Images with Docker Toolset
