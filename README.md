@@ -65,6 +65,8 @@ Access Docker daemon from windows. Requires local docker client executable in pa
 docker -H ssh://user@host ps
 # or for advanced use
 set DOCKER_HOST=ssh://user@host
+# for powershell:
+# $Env:DOCKER_HOST += "ssh://user@host"
 docker ps
 ```
 
@@ -98,9 +100,14 @@ docker volume ls
 Docker Compose
 ```bash
 # install compose
+# not needed in PWD
 curl -sSL https://github.com/docker/compose/releases/download/1.23.2/docker-compose-`uname -s`-`uname -m` \
   -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
+
+# check out this repo
+git clone https://github.com/davidkroell/docker-deepdive
+cd docker-deepdive
 
 # deploy wordpress service
 docker-compose -f wordpress-compose.yml up
