@@ -49,10 +49,10 @@ docker run mongo
 
 # advanced mysql deployment
 docker run --name mysql57 –d \
-	--restart=always
+	--restart=always \
 	–p 127.0.0.1:3306:3306 \
 	-v mysql:/var/run/mysql \
-	-e MYSQL_ROOT_PASSWORD=my-secret-pw
+	-e MYSQL_ROOT_PASSWORD=my-secret-pw \
 	mysql:5.7
 ```
 
