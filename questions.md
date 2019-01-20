@@ -53,3 +53,5 @@ Why does a Docker container not see the processes running on the host?
     - How to enable load balancing between the Laravel instances?
     - Does a user detect a failure of one instance if he is currently signed-in into the application?
 1. Where do you store logs (assuming you run Apache)?
+1. Assuming you run a Docker host in an lab environment where every student has SSH access to the server for development purpose and everyone is in the `docker` group.
+    - How do you ensure that the system files do not get compromised through a directory mount?
